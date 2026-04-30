@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelas PTIK 2023 A</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo uin.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../dist/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-premium">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold d-flex align-items-center">
+                <img src="../assets/logo/icon.png" alt="Logo" width="45" height="45"
+                    class="d-inline-block align-text-top me-3 logo-animasi">
+                <span class="brand-text">TEKNIK INFORMATIKA KOMPUTER 2023 </span>
+            </a>
+            <div class="ms-auto nav-links">
+                <a href="#" onclick="showSection('beranda')" class="nav-item" title="Beranda">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-label">Beranda</span>
+                </a>
+                <a href="#" onclick="showSection('member')" class="nav-item" title="Member">
+                    <i class="fas fa-users"></i>
+                    <span class="nav-label">Member</span>
+                </a>
+                <a href="#" onclick="showSection('jadwal')" class="nav-item" title="Jadwal">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="nav-label">Jadwal</span>
+                </a>
+                <a href="#" onclick="showSection('galeri')" class="nav-item" title="Galeri">
+                    <i class="fas fa-images"></i>
+                    <span class="nav-label">Galeri</span>
+                </a>
+                <a href="#" onclick="showSection('developer')" class="nav-item" title="Developer">
+                    <i class="fas fa-code"></i>
+                    <span class="nav-label">Developer</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div id="beranda" class="section active">
+            <div class="text-center mb-3">
+                <h4 class="fw-bold mb-0">Pelopor Digital</h4>
+                <p class="text-muted small">Logika & Kreativitas</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-9 col-11">
+                    <div class="card p-3 p-md-4 shadow-sm border-0 main-card">
+                        <div class="card-body text-center p-0">
+                            <h5 class="welcome-text mb-3">Inovasi Masa Depan</h5>
+
+                            <div class="content-text">
+                                <p class="small-text">
+                                    Selamat datang di portal resmi <strong>PTIK 2023 Kelas A</strong>.
+                                    Komunitas pembelajar dari <strong>UIN Sjech M. Djamil Djambek Bukittinggi</strong>.
+                                </p>
+
+                                <div class="pembatas-simple"></div>
+
+                                <p class="small-text">
+                                    Kami adalah 22 individu yang berkolaborasi dalam menguasai teknologi dan merancang
+                                    solusi digital untuk masa depan.
+                                </p>
+                            </div>
+
+                            <div class="mt-3">
+                                <button class="btn btn-sm btn-primary rounded-pill px-4"
+                                    onclick="showSection('member')">
+                                    Lihat Anggota
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="member" class="section">
+        <div class="container mt-4">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-users section-icon"></i> Member Kelas</h2>
+                <p class="section-subtitle">Anggota aktif PTIK 2023 A yang solid dan kompak</p>
+            </div>
+            <div class="row" id="memberList"></div>
+        </div>
+    </div>
+
+    <div id="jadwal" class="section">
+        <div class="container mt-4">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-calendar-alt section-icon"></i> Jadwal Kuliah</h2>
+                <p class="section-subtitle">Struktur pembelajaran semester ini yang teratur dan terorganisir</p>
+            </div>
+            <div id="jadwalContainer"></div>
+        </div>
+    </div>
+
+    <div id="galeri" class="section">
+        <div class="container mt-4">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title"><i class="fas fa-images section-icon"></i> Studio Gallery</h2>
+                <p class="section-subtitle">Momen berharga kebersamaan PTIK 2023 A yang tak terlupakan</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-5 col-sm-6">
+                    <div class="gallery-card">
+                        <img src="../assets/images/galeri1.jpeg" class="gallery-img" alt="Foto Studio 1">
+                        <div class="gallery-info">
+                            <h5>The Unity</h5>
+                            <p>Kebersamaan dalam satu visi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <div class="gallery-card">
+                        <img src="../assets/images/galeri2.jpeg" class="gallery-img" alt="Foto Studio 2">
+                        <div class="gallery-info">
+                            <h5>Informatics Soul</h5>
+                            <p>Jiwa muda penuh teknologi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <div class="gallery-card">
+                        <img src="../assets/images/galeri3.jpeg" class="gallery-img" alt="Foto Studio 3">
+                        <div class="gallery-info">
+                            <h5>Behind the Tech</h5>
+                            <p>Sisi lain dari sang pengembang.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <div class="gallery-card">
+                        <img src="../assets/images/galeri4.jpeg" class="gallery-img" alt="Foto Studio 4">
+                        <div class="gallery-info">
+                            <h5>Class of 2023</h5>
+                            <p>Mencetak sejarah di PTIK A.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="developer" class="section">
+        <div class="container mt-4">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-code section-icon"></i> Tim Pengembang</h2>
+                <p class="section-subtitle">Kreator dan developer di balik portal digital ini</p>
+            </div>
+            <div class="row justify-content-center text-center" id="devList">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="bg-dark text-white mt-5 py-4 text-center">
+        <div class="container">
+            <p class="mb-3">&copy; 2023 PTIK Kelas A | UIN Sjech M. Djamil Djambek Bukittinggi</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ptik23a?igsh=MWR2NTR0b2x5dDNyMQ==" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light rounded-circle me-2" title="Follow Instagram PTIK 2023 A">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../dist/js/script.js"></script>
+</body>
+
+</html>
